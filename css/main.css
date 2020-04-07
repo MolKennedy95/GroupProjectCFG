@@ -1,0 +1,160 @@
+/* Background */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  /* Header/logo Title */
+  .header {
+    padding: 60px;
+    text-align: center;
+    background-color: white;
+    background-size: contain;
+    color:orange;
+  }
+  
+  /* Style the top navigation bar */
+  .navbar {
+    display: flex;
+    background-color:black;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color:orange;
+    color:white;
+  }
+
+  .active {
+    background-color: blue;
+    color: white;
+  }
+
+  .dropdown {
+    float: center;
+    text-align: center;
+    overflow: hidden;
+  }
+
+ .dropdown .dropbtn {
+        font-size: 100%;  
+        text-align: center;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 20px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }  
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .dropdown-content a:hover {
+        background-color:orange;
+        color: white;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }   
+
+  
+  /* Column container */
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100%;
+    background-color: white;
+    /* margin: 10px; */
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 30%;
+    background-color:white;
+    padding: 20px;
+  }
+  
+  /* Main column */
+  .main {
+    flex: 70%;
+    background-color: black;
+    padding: 20px;
+  }
+  
+  /* Fake image, just for this example */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .polly {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 60%;
+    height: auto;
+    /* padding: 20px; */
+  }
+  
+  .socials {
+    display:inline-block;
+    height: auto;
+    width: 20%;
+    padding: 5%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  /* This is class to center */
+  .centering {
+    text-align: center;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+  }
