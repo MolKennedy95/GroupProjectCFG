@@ -6,7 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>PollyLingo</title>
-        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/main.css"> <!--css style sheet --> 
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js"></script>        <script src="./CircleType-master/dist/circletype.min.js" ></script> <!--curved font js --> 
+        <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet'> <!--Chewy font --> 
+        <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap" rel="stylesheet"> <!--Pontano Sans font --> 
+
 </head>
 
 
@@ -19,37 +25,66 @@
     </div>
     
  
-      
+       
     <!-- Navigation Bar -->
     <div class="navbar">
-      <a href="#" class="active"> Homepage</a>
+      <a href="index.html" class="active"> Homepage</a>
       <div class="dropdown">    
             <button class="dropbtn">Languages
             <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-            <a href="#">French</a>
-            <a href="#">Spanish</a>
-            <a href="#">German</a>
+            <a href="french.html">French</a>
+            <a href="spanish.html">Spanish</a>
+            <a href="german.html">German</a>
             </div>
         </div>
-      <a href="#">Contact The Team</a>
-    </div>  
-       
+      <a href="contact.html">Contact The Team</a>
+    </div>   
+         
     <!-- Header --> 
     <div class="header">
-      <h1>Welcome to PollyLingo!!</h1>
-      <p>Polly is here to help <b>you</b> become a language expert.</p>
+      <h1 id="title1">Welcome to PollyLingo!</h1>
+      <script>
+    //This curved type shrinks and expands to fit inside its container. </h2>
+      var circleType = new CircleType(document.getElementById('title1'))
+      .radius(300);
+      $(circleType.element).fitText(0.8, { minFontSize: '40%', maxFontSize: '85%' });
+     </script>
+              <img src="polly.png" class="polly"> 
+
+      <br>  
+      <br>       
+
+       <h2 id="title2">Polly who? Polly what? Become a Pollyglot with PollyLingo!</h2>
+       <script>
+		$("#title2").fitText(1.5, { minFontSize: '0px', maxFontSize: '40%' });
+
+           </script>
+     
+     <br>
+    
+
     </div>  
     
     <!-- The flexible grid (content) -->
     <div class="row">   
+        <div class="side">
+    <div class="row">   
       <div class="side">
         <h2>Meet Polly:</h2>
-        <p>Polly is a multilingual xxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-        <img src="polly.png" class="polly"> 
-
-           
+        <p>Polly is on a mission to travel the world. She is passionate about exploring different countries, discovering new cultures, and learning their respective languages. So far she has conquered <a href="french.html">France</a>, <a href="spanish.html">Spain</a> , and <a href="german.html">Germany</a>. Join Polly on her adventures as she shares her cultural experiences and linguistic expertise with you!</p>
+        
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    
 
         <div class="centering">
         <h3>Follow Polly on Social Media:</h3>
@@ -62,7 +97,7 @@
       </div>
    
 
-      <div class="main">
+      <!-- <div class="main">
         <h2>TITLE HEADING</h2>
         <h5>Title description, Dec 7, 2017</h5>
         <div class="fakeimg" style="height:200px;">Image</div>
@@ -75,12 +110,12 @@
         <p>Some text..</p>
         <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
       </div>
-    </div>
+    </div> -->
     
     <!-- Footer -->
-    <div class="footer">
+    <!-- <div class="footer">
       <h2>Footer</h2>
-    </div>
+    </div> -->
     
 </body>
       
